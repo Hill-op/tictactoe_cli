@@ -193,4 +193,20 @@ def tictactoe_start():
                 print("Can't accept input. Either the position is already taken or the input is invalid. try inputting again.")
 
 #play the game
-tictactoe_start()
+play_game = True
+while play_game == True:
+    tictactoe_start()
+    continue_popup = True
+    while continue_popup == True:
+        continue_prompt = input("do you want to play again? (y/n): ").lower()
+        if continue_prompt == "y":
+            print("Cleaning the board...")
+            continue_popup = False
+            
+        elif continue_prompt == "n":
+            print("Thank you for playing!")
+            continue_popup = False
+            play_game = False
+            
+        else:
+            print("invalid input, please input as specified (y/n)")
