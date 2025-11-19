@@ -205,6 +205,4 @@ while True:
             exit() #Keluar dari program
         
         else:
-            print("Invalid input. Please enter 'y' for yes or 'no' for nio." )
-#play the game
-tictactoe_start()
+            print("Invalid input. Please enter 'y' for yes or 'n' for no." )
