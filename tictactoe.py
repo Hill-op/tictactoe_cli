@@ -192,16 +192,19 @@ def tictactoe_start():
             else:
                 print("Can't accept input. Either the position is already taken or the input is invalid. try inputting again.")
 
-# Loop untuk main lagi atau tidak
+#Loop untuk main lagi atau tidak
 while True:
     tictactoe_start()
-    # Setelah permainan selesai, tanya apakah ingin main lagi
-    while True:
-        play_again = input("Do you want to play again? (y/n): ").lower()
-        if play_again == 'y':
-            break  # Main lagi
+    # Setelah permainan selesai, tanya apakah ingin main lagi 
+    while True :
+        play_again =input ("Do you want to play again ? (y/n): ").lower()
+        if play_again == 'y' :
+            break #main  lagi
         elif play_again == 'n':
-            print("Thanks for playing!")
-            exit()  # Keluar dari program
+            print("Thanks for playing")
+            exit() #Keluar dari program
+        
         else:
-            print("Invalid input. Please enter 'y' for yes or 'n' for no.")
+            print("Invalid input. Please enter 'y' for yes or 'no' for nio." )
+#play the game
+tictactoe_start()
