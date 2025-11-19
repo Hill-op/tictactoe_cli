@@ -194,15 +194,30 @@ def tictactoe_start():
 
 #Loop untuk main lagi atau tidak
 while True:
-    tictactoe_start()
-    # Setelah permainan selesai, tanya apakah ingin main lagi 
-    while True :
-        play_again =input ("Do you want to play again ? (y/n): ").lower()
-        if play_again == 'y' :
-            break #main  lagi
-        elif play_again == 'n':
-            print("Thanks for playing")
-            exit() #Keluar dari program
-        
-        else:
-            print("Invalid input. Please enter 'y' for yes or 'n' for no." )
+    print("Welcome to TicTacToe\nInsert the number corresponding to the action:\n1 - Play\n2 - Ruleset\n3 - Exit")
+    user_input_mode = input()
+    if user_input_mode == "1":
+        playing = True
+        while playing == True:
+            tictactoe_start()
+            # Setelah permainan selesai, tanya apakah ingin main lagi 
+            while True :
+                play_again = input ("Do you want to play again?  (y = play again / n = return to menu): ").lower()
+                if play_again == 'y' :
+                    break #main  lagi
+                elif play_again == 'n':
+                    playing = False
+                    break        
+                else:
+                    print("Invalid input. Please enter 'y' for yes or 'no' for no." )
+    elif user_input_mode == "2":
+        clear_output()
+        print("=========\n1. Find an opponent and determine who goes first \n2. One player plays X's and the other plays O's\n3. Players take turns marking a space in a 3X3 grid\n4. The player that places 3 of their marks in a horizontal, vertical or diagonal row wins the game/n=========")
+    elif user_input_mode == "3":
+        clear_output()
+        print("Thanks for playing!")
+    else:
+        clear_output()
+        print("Invalid input. Please enter the number listed." )
+#play the game
+#tictactoe_start()
