@@ -212,10 +212,11 @@ while True:
                     print("Invalid input. Please enter 'y' for yes or 'n' for no." )
     elif user_input_mode == "2":
         clear_output()
-        print("=========\n1. Find an opponent and determine who goes first \n2. One player plays X's and the other plays O's\n3. Players take turns marking a space in a 3X3 grid\n4. The player that places 3 of their marks in a horizontal, vertical or diagonal row wins the game/n=========")
+        print("=========\n1. Find an opponent and determine who goes first \n2. One player plays X's and the other plays O's\n3. Players take turns marking a space in a 3X3 grid\n4. The player that places 3 of their marks in a horizontal, vertical or diagonal row wins the game\n=========")
     elif user_input_mode == "3":
         clear_output()
         print("Thanks for playing!")
+        exit()
     else:
         clear_output()
         print("Invalid input. Please enter the number listed." )
