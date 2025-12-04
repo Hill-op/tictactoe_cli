@@ -23,15 +23,6 @@ not my part
   3 - Exit
 - Untuk bermain, masukkan '1' dan tekan Enter.
 - Program akan membersihkan layar, menampilkan papan, dan menentukan giliran pemain.
-  =============
-  -------------
-  | 1 | 2 | 3 |
-  -------------
-  | 4 | 5 | 6 |
-  -------------
-  | 7 | 8 | 9 |
-  -------------
-  =============
 - *Pemain* *1* menggunakan simbol *O.*
 - *Pemain* *2* menggunakan simbol *X.*
 - Secara default, *Player* *1* *(O)* akan bermain pertama.
