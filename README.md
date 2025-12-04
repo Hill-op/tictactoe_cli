@@ -12,36 +12,33 @@ Permainan Tictactoe sederhana menggunakan python dan berbasis command line inter
 
 ## Installasi dan penjalanan program
 
-- Pastikan python package sudah terinstall dalam device yang akan Anda gunakan
-- Buka menu Github
-- Cari menu "releases" lalu unduh latest rar.file
-- Buka dokumen, lalu extract archive ke folder 
-- Buka file yang telah di extract
-- Run .bat file 
+1. Pastikan python package sudah terinstall dalam device yang akan Anda gunakan.
+2. Buka menu Github ini.
+3. Cari menu "releases" lalu unduh .rar file dari yang paling baru (latest).
+4. Buka file archive, lalu extract archive ke folder kosong.
+5. Run (klik dua kali) file "run.bat" untuk menjalankan program. 
 
 ## Cara bermain dalam program
-- Saat program pertama kali dijalankan, Anda akan melihat menu utama seperti ini :
-  Welcome to TictacToe
-  Insert the number corresponding to the action:
-  1 - Play
-  2 - Ruleset
-  3 - Exit
-- Untuk bermain, masukkan '1' dan tekan Enter.
-- Program akan membersihkan layar, menampilkan papan, dan menentukan giliran pemain.
-- *Pemain* *1* menggunakan simbol *O.*
-- *Pemain* *2* menggunakan simbol *X.*
-- Secara default, *Player* *1* *(O)* akan bermain pertama.
-- Di bawah papan, program akan menunjukkan giliran pemain saat ini:
-  Current player's turn = Player 1 (O)
-- Program akan meminta masukan:
-  insert number of the space which you want to fill:
-- Anda harus memasukkan angka dari *1* *hingga* *9* yang sesuai dengan kotak yang ingin Anda tempatkan simbol ( O atau X).
-- Jika Anda memasukkan angka yang sudah terisi oleh simbol lain, atau jika Anda memasukan *angka yang tidak vailid*(bukan 1-9), program akan menampilkan pesan keasalahan dan meminta Anda untuk memasukkan input lagi.
-- Setelah masukan valid, giliran pemain akan bermain secara bergantian.
-- Program akan mengulang proses sampai ada pemenang atau seri.
-- Jika salah satu pemain berhasil mendapatkan tiga simbol secara horizontal, vertikal atau diagonal, program akan mendeklarasikan pemenang,
-- Jika semua kotak terisi dan tidak ada pemenang, program akan mendeklarasikan seri.
-- Setelah permainan berakhir, Anda akan ditanya apakah ingin bermain lagi ('y' untuk ya, 'n' untuk kembali ke menu).
+1. Saat program pertama kali dijalankan, Anda akan melihat menu utama seperti ini :
+
+  <img width="377" height="96" alt="image" src="https://github.com/user-attachments/assets/1719c699-4a21-4692-a6ab-0a09cf68d24e" />
+  
+3. Untuk bermain, masukkan '1' dan tekan Enter.
+4. Program akan membersihkan layar, menampilkan papan, dan menentukan giliran pemain.
+5. *Pemain 1* menggunakan simbol *O.*
+6. *Pemain 2* menggunakan simbol *X.*
+7. Secara default, *Pemain 1 (O)* akan bermain pertama.
+8. Di bawah papan, program akan menunjukkan giliran pemain saat ini:
+
+  <img width="425" height="54" alt="image" src="https://github.com/user-attachments/assets/9001eb97-cda4-4d9d-9d61-4e289cd277d2" />
+  
+10. Program akan meminta masukan. Anda harus memasukkan angka dari *1 hingga 9* yang sesuai dengan kotak yang ingin Anda tempatkan simbol (O atau X tergantung giliran pemain).
+11. Jika Anda memasukkan angka yang sudah terisi oleh simbol lain, atau jika Anda memasukan *input yang tidak valid*(bukan angka 1-9), program akan menampilkan pesan keasalahan dan meminta Anda untuk memasukkan input lagi.
+12. Setelah masukan valid, kotak akan terisi dan giliran permain akan bergantian
+13. Program akan mengulang proses sampai ada pemenang atau seri.
+  - Jika salah satu pemain berhasil mendapatkan tiga simbol secara horizontal, vertikal atau diagonal, program akan mendeklarasikan pemenang,
+  - Jika semua kotak terisi dan tidak ada pemenang, program akan mendeklarasikan seri.
+13. Setelah permainan berakhir, Anda akan ditanya apakah ingin bermain lagi ('y' untuk ya, 'n' untuk kembali ke menu).
   
 ### Penjelasan fungsi dalam program
 - `clear_output()`: membersihkan command line setiap kali dijalankan.
