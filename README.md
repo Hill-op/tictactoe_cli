@@ -12,7 +12,12 @@ Permainan Tictactoe sederhana menggunakan python dan berbasis command line inter
 
 ## Installasi dan penjalanan program
 
-not my part
+- Pastikan python package sudah terinstall dalam device yang akan Anda gunakan
+- Buka menu Github
+- Cari menu "releases" lalu unduh latest rar.file
+- Buka dokumen, lalu extract archive ke folder 
+- Buka file yang telah di extract
+- Run .bat file 
 
 ## Cara bermain dalam program
 - Saat program pertama kali dijalankan, Anda akan melihat menu utama seperti ini :
