@@ -15,9 +15,38 @@ Permainan Tictactoe sederhana menggunakan python dan berbasis command line inter
 not my part
 
 ## Cara bermain dalam program
-
-not my part
-
+- Saat program pertama kali dijalankan, Anda akan melihat menu utama seperti ini :
+  Welcome to TictacToe
+  Insert the number corresponding to the action:
+  1 - Play
+  2 - Ruleset
+  3 - Exit
+- Untuk bermain, masukkan '1' dan tekan Enter.
+- Program akan membersihkan layar, menampilkan papan, dan menentukan giliran pemain.
+  =============
+  -------------
+  | 1 | 2 | 3 |
+  -------------
+  | 4 | 5 | 6 |
+  -------------
+  | 7 | 8 | 9 |
+  -------------
+  =============
+- *Pemain* *1* menggunakan simbol *O.*
+- *Pemain* *2* menggunakan simbol *X.*
+- Secara default, *Player* *1* *(O)* akan bermain pertama.
+- Di bawah papan, program akan menunjukkan giliran pemain saat ini:
+  Current player's turn = Player 1 (O)
+- Program akan meminta masukan:
+  insert number of the space which you want to fill:
+- Anda harus memasukkan angka dari *1* *hingga* *9* yang sesuai dengan kotak yang ingin Anda tempatkan simbol ( O atau X).
+- Jika Anda memasukkan angka yang sudah terisi oleh simbol lain, atau jika Anda memasukan *angka yang tidak vailid*(bukan 1-9), program akan menampilkan pesan keasalahan dan meminta Anda untuk memasukkan input lagi.
+- Setelah masukan valid, giliran pemain akan bermain secara bergantian.
+- Program akan mengulang proses sampai ada pemenang atau seri.
+- Jika salah satu pemain berhasil mendapatkan tiga simbol secara horizontal, vertikal atau diagonal, program akan mendeklarasikan pemenang,
+- Jika semua kotak terisi dan tidak ada pemenang, program akan mendeklarasikan seri.
+- Setelah permainan berakhir, Anda akan ditanya apakah ingin bermain lagi ('y' untuk ya, 'n' untuk kembali ke menu).
+  
 ### Penjelasan fungsi dalam program
 - `clear_output()`: membersihkan command line setiap kali dijalankan.
 - `tictactoe_visual()`: Memunculkan display visual (papan bermain) tictactoe saat dijalankan, setiap angka merupakan posisi setiap kotak yang masih belum diambil.
